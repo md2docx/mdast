@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "entryPoints": ["test/index.test-d.ts"]
+}
