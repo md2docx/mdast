@@ -1,112 +1,80 @@
-# `@m2d/mdast` <img src="https://raw.githubusercontent.com/mayank1513/mayank1513/main/popper.png" height="40"/>
+# @m2d/mdast
 
-[![Version](https://img.shields.io/npm/v/@m2d/mdast?color=green)](https://www.npmjs.com/package/@m2d/mdast) ![Downloads](https://img.shields.io/npm/d18m/@m2d/mdast) ![Bundle Size](https://img.shields.io/bundlephobia/minzip/@m2d/mdast)
+[![test](https://github.com/md2docx/mdast/actions/workflows/test.yml/badge.svg)](https://github.com/md2docx/mdast/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/aa896ec14c570f3bb274/maintainability)](https://codeclimate.com/github/md2docx/mdast/maintainability) [![codecov](https://codecov.io/gh/md2docx/mdast/graph/badge.svg)](https://codecov.io/gh/md2docx/mdast) [![Version](https://img.shields.io/npm/v/@m2d/mdast.svg?colorB=green)](https://www.npmjs.com/package/@m2d/mdast) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/@m2d/mdast.svg)](https://www.npmjs.com/package/@m2d/mdast) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@m2d/mdast)
 
-> Extended MDAST types and nodes with custom properties and extra formatting data for `mdast2docx`.
+> Emoji shortcode support for `mdast2docx`
+
+This plugin adds support for emoji shortcodes (e.g., `:smile:`, `:rocket:`) in your Markdown-to-DOCX conversion pipeline. It replaces recognized emoji shortcodes with their corresponding Unicode characters during the MDAST transformation.
+
+---
+
+## ✨ Features
+
+- Converts emoji shortcodes to Unicode emojis (e.g., `:tada:` → 🎉)
+- Compatible with [`@m2d/core`](https://www.npmjs.com/package/@m2d/core)
+- Works seamlessly within the `mdast2docx` plugin ecosystem
+- Easy to integrate and lightweight
 
 ---
 
 ## 📦 Installation
 
 ```bash
-npm install @m2d/mdast
+pnpm install @m2d/mdast
 ```
 
-```bash
-pnpm add @m2d/mdast
-```
+**_or_**
 
 ```bash
 yarn add @m2d/mdast
 ```
 
----
+**_or_**
 
-## 🚀 Overview
-
-The `@m2d/mdast` package enhances the standard [MDAST](https://github.com/syntax-tree/mdast) specification by introducing:
-
-- New **custom node types** to support advanced features.
-- Extended **`.data`** fields for compatibility with the `docx` library.
-- Internal utilities used by the `mdast2docx` ecosystem for fine-grained control.
-
-This allows the entire processing pipeline to recognize, style, and transform nodes with rich document semantics during DOCX generation.
-
----
-
-## ✨ Extended Node Types
-
-```ts
-export interface EmptyNode {
-  type: ""; // Used to skip further processing
-  [key: string]: unknown;
-}
-
-export interface Fragment extends Parent {
-  type: "fragment";
-  children: (RootContent | PhrasingContent)[];
-}
-
-export interface Checkbox extends Node {
-  type: "checkbox";
-  checked?: boolean;
-}
+```bash
+npm add @m2d/mdast
 ```
 
-### 💡 Why?
+---
 
-- `EmptyNode`: Prevents duplicate processing (similar to `event.stopPropagation()`).
-- `Fragment`: Acts like a container node for grouping without injecting a parent block (like React fragments).
-- `Checkbox`: Represents checkbox nodes parsed from GFM syntax or HTML input tags.
+## 🧠 How It Works
+
+This plugin scans all text nodes for emoji shortcodes (e.g., `:fire:`, `:sparkles:`) and replaces them with matching Unicode emojis using a predefined emoji JSON mapping.
 
 ---
 
-## 🛠️ Extended Data Props
+## 🔍 Emoji Support
 
-The `data` field on MDAST nodes is enriched to include DOCX-compatible styling options:
+It uses the [GitHub-style emoji shortcodes](https://github.com/ikatyang/emoji-cheat-sheet) and more — if a shortcode is not recognized, it will remain unchanged.
 
-```ts
-export interface Data extends UnistData {
-  border?: IBorderOptions | IBordersOptions;
-  alignment?: AlignmentType;
-  bold?: boolean;
-  italics?: boolean;
-  underline?: { type: UnderlineType; color: string } | {};
-  emphasisMark?: {};
-  strike?: boolean;
-  allCaps?: boolean;
-  smallCaps?: boolean;
-  subScript?: boolean;
-  superScript?: boolean;
-  color?: string;
-  highlight?: string; // highlight color
-  frame?: IFrameOptions;
-  pre?: boolean;
-}
+---
+
+## 🛠️ Development
+
+```bash
+# Clone and install dependencies
+git clone https://github.com/md2docx/emoji-plugin
+cd emoji-plugin
+npm install
+
+# Build / Test / Dev
+npm run build
 ```
 
-### 📌 Use Cases
+---
 
-- Styling from inline/block HTML is parsed into these fields for direct use with `docx`.
-- Rich formatting control like highlights, alignment, text effects, and borders.
-- Useful when transforming MDAST to Word-compatible components.
+## 📄 License
+
+Licensed under the **MPL-2.0** License.
 
 ---
 
-## 🧩 Integration
+## ⭐ Support Us
 
-This package is used internally by:
+If you find this useful:
 
-- [`@m2d/core`](https://www.npmjs.com/package/@m2d/core)
-- Plugins like [`@m2d/html`](https://www.npmjs.com/package/@m2d/html), [`@m2d/image`](https://www.npmjs.com/package/@m2d/image), etc.
-
-You don’t need to use this package directly unless you're working on custom plugins or extending the MDAST tree manually.
-
----
-
-## 🧾 License
-
-MIT © [Mayank Chaudhari](https://github.com/mayankchaudhari)
+- ⭐ Star [mdast2docx](https://github.com/md2docx/mdast2docx) on GitHub
+- ❤️ Consider [sponsoring](https://github.com/sponsors/mayank1513)
 
 ---
 
