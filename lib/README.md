@@ -1,6 +1,6 @@
 # `@m2d/mdast` <img src="https://raw.githubusercontent.com/mayank1513/mayank1513/main/popper.png" height="40"/>
 
-[![test](https://github.com/md2docx/mdast/actions/workflows/test.yml/badge.svg)](https://github.com/md2docx/mdast/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/md2docx/mdast/graph/badge.svg)](https://codecov.io/gh/md2docx/mdast) [![Version](https://img.shields.io/npm/v/@m2d/mdast?color=green)](https://www.npmjs.com/package/@m2d/mdast) ![Downloads](https://img.shields.io/npm/d18m/@m2d/mdast) ![Bundle Size](https://img.shields.io/bundlephobia/minzip/@m2d/mdast)
+[![Version](https://img.shields.io/npm/v/@m2d/mdast?color=green)](https://www.npmjs.com/package/@m2d/mdast) ![Downloads](https://img.shields.io/npm/d18m/@m2d/mdast) ![Bundle Size](https://img.shields.io/bundlephobia/minzip/@m2d/mdast)
 
 > Extended MDAST types and nodes with custom properties and extra formatting data for `mdast2docx`.
 
