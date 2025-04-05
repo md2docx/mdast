@@ -38,7 +38,7 @@
     "docx": "^9.3.0",
     "esbuild-plugin-rdi": "^0.0.0",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "docx": "^9.3.0"
