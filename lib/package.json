@@ -75,8 +75,8 @@
     "ms-word",
     "rich text",
     "footnotes",
-    "images",
     "hyperlinks",
+    "images",
     "mdast2docx"
   ]
 }

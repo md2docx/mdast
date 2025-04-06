@@ -76,9 +76,16 @@ try {
     { stdio: "inherit" },
   );
 } catch {
-  execSync(`gh release create ${VERSION} --generate-notes --latest --title "Release v${VERSION}"`, {
-    stdio: "inherit",
-  });
+  try {
+    execSync(
+      `gh release create ${VERSION} --generate-notes --latest --title "Release v${VERSION}"`,
+      {
+        stdio: "inherit",
+      },
+    );
+  } catch {
+    // empty
+  }
 }
 
 try {
