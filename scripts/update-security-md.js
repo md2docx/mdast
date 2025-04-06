@@ -11,5 +11,6 @@ module.exports = (newMajor_minor, oldMajor_minor) => {
   execSync(`sed -i -e "s/.*| :x:.*/| < ${oldMajor_minor}   | :x:                |/" SECURITY.md`);
   execSync(
     `git add SECURITY.md && git commit -m 'Update SECURITY.md [skip ci]' && git push origin ${process.env.BRANCH}`,
+    { stdio: "inherit" },
   );
 };
