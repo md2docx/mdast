@@ -26,6 +26,10 @@ export interface Checkbox extends Node {
   checked?: boolean;
 }
 
+export interface SVG extends Literal {
+  type: "svg";
+}
+
 // ## Enumeration
 
 /**
@@ -348,6 +352,7 @@ export interface PhrasingContentMap {
   empty: EmptyNode;
   fragment: Fragment;
   checkbox: Checkbox;
+  svg: SVG;
 }
 
 /**
