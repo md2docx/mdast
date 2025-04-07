@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.1
+
+### Patch Changes
+
+- ec31946: Require id attribute for svg
+
 ## 0.1.0
 
 ### Minor Changes
