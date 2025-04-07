@@ -28,6 +28,7 @@ export interface Checkbox extends Node {
 
 export interface SVG extends Literal {
   type: "svg";
+  id: string;
 }
 
 // ## Enumeration
