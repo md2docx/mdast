@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.2
+
+### Patch Changes
+
+- 758f7c2: Fix: Add optional mermaid source to SVGData.
+
 ## 0.1.1
 
 ### Patch Changes
