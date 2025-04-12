@@ -26,9 +26,16 @@ export interface Checkbox extends Node {
   checked?: boolean;
 }
 
+export interface SVGData extends Data {
+  /**
+   * Mermaid source code
+   */
+  mermaid?: string;
+}
 export interface SVG extends Literal {
   type: "svg";
   id: string;
+  data?: SVGData;
 }
 
 // ## Enumeration
