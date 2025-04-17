@@ -35,7 +35,7 @@
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.14.1",
     "@types/unist": "^3.0.3",
-    "docx": "^9.3.0",
+    "docx": "^9.4.0",
     "esbuild-plugin-rdi": "^0.0.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
