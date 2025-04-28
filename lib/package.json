@@ -33,7 +33,7 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.15.2",
+    "@types/node": "^22.15.3",
     "@types/unist": "^3.0.3",
     "docx": "^9.4.1",
     "esbuild-plugin-rdi": "^0.0.0",
