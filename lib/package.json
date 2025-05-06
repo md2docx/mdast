@@ -33,9 +33,9 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.15.3",
+    "@types/node": "^22.15.9",
     "@types/unist": "^3.0.3",
-    "docx": "^9.4.1",
+    "docx": "^9.5.0",
     "esbuild-plugin-rdi": "^0.0.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
