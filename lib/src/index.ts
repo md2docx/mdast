@@ -1,4 +1,11 @@
-import { AlignmentType, IBorderOptions, IBordersOptions, IFrameOptions, UnderlineType } from "docx";
+import {
+  AlignmentType,
+  IBorderOptions,
+  IBordersOptions,
+  IFrameOptions,
+  IImageOptions,
+  UnderlineType,
+} from "docx";
 import type {
   Data as UnistData,
   Literal as UnistLiteral,
@@ -808,6 +815,8 @@ export interface Image extends Alternative, Node, Resource {
 export interface ImageData extends Data {
   width?: number | null;
   height?: number | null;
+  altText?: string;
+  imageOptions?: IImageOptions;
 }
 
 /**
