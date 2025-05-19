@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.5
+
+### Patch Changes
+
+- f6a9215: Update image data to hold docx image options - for optimized flow
+
 ## 0.1.4
 
 ### Patch Changes
