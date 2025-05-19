@@ -32,9 +32,9 @@ export interface SVGData extends Data {
    */
   mermaid?: string;
 }
-export interface SVG extends Literal {
+export interface SVG extends Node {
   type: "svg";
-  id: string;
+  value: string | Promise<{ svg: string }>;
   data?: SVGData;
 }
 
