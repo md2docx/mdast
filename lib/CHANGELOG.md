@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.3
+
+### Patch Changes
+
+- 7ef1a0d: Update SVG type to support promises for mermaid generation
+
 ## 0.1.2
 
 ### Patch Changes
