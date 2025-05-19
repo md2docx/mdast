@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.4
+
+### Patch Changes
+
+- 4a59733: Move types utils to mdast/utils
+
 ## 0.1.3
 
 ### Patch Changes
