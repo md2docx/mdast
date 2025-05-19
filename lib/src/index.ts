@@ -5,7 +5,7 @@ import type {
   Node as UnistNode,
   Parent as UnistParent,
 } from "unist";
-export type Mutable<T> = { -readonly [K in keyof T]: T[K] extends object ? Mutable<T> : T[K] };
+import { Mutable } from "./utils";
 
 /**
  * This is used to avoid multiple times processing of a given node.
@@ -1170,3 +1170,5 @@ export interface YamlData extends Data {}
  *   Please use `Yaml` instead.
  */
 export type YAML = Yaml;
+
+export * from "./utils";

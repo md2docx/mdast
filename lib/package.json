@@ -16,11 +16,9 @@
     "dist/**"
   ],
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    }
+    ".": "./dist/index.d.ts",
+    "./utils": "./dist/utils.d.ts",
+    "./dist/utils": "./dist/utils.d.ts"
   },
   "scripts": {
     "build": "tsup && tsc -p tsconfig-build.json && gzip -c dist/index.js | wc -c",
