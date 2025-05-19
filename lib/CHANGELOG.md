@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.6
+
+### Patch Changes
+
+- 330464a: Fix type utilities to handle function types
+
 ## 0.1.5
 
 ### Patch Changes
