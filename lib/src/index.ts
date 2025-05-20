@@ -812,12 +812,11 @@ export interface Image extends Alternative, Node, Resource {
 /**
  * Info associated with mdast image nodes by the ecosystem.
  */
-export interface ImageData extends Data {
-  width?: number | null;
-  height?: number | null;
-  altText?: string;
-  imageOptions?: IImageOptions;
-}
+export type ImageData = Data &
+  IImageOptions & {
+    width?: number | null;
+    height?: number | null;
+  };
 
 /**
  * Markdown image reference.
