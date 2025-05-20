@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.7
+
+### Patch Changes
+
+- 1ca480f: Fix image-data type
+
 ## 0.1.6
 
 ### Patch Changes
