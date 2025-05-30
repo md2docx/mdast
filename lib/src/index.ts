@@ -42,7 +42,7 @@ export interface SVGData extends Data {
 }
 export interface SVG extends Node {
   type: "svg";
-  value: string | Promise<RenderResult>;
+  value: string | Promise<RenderResult | undefined>;
   data?: SVGData;
 }
 
