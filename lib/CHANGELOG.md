@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.9
+
+### Patch Changes
+
+- ad8a902: fix SVG value type to better handle rendering exeptions
+
 ## 0.1.8
 
 ### Patch Changes
