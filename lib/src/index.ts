@@ -13,6 +13,7 @@ import type {
   Parent as UnistParent,
 } from "unist";
 import { Mutable } from "./utils";
+import { RenderResult } from "mermaid";
 
 /**
  * This is used to avoid multiple times processing of a given node.
@@ -41,7 +42,7 @@ export interface SVGData extends Data {
 }
 export interface SVG extends Node {
   type: "svg";
-  value: string | Promise<{ svg: string }>;
+  value: string | Promise<RenderResult>;
   data?: SVGData;
 }
 
