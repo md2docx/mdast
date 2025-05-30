@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.1.8
+
+### Patch Changes
+
+- 8aecf73: Update svg node value type
+
 ## 0.1.7
 
 ### Patch Changes
