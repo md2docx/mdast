@@ -943,8 +943,8 @@ packages:
       docx: ^9.3.0
       remark-math: ^6.0.0
 
-  '@m2d/mdast@0.1.7':
-    resolution: {integrity: sha512-8VQgKI5naT/IjM91+GiEvyCZ6bAAguOi6zGGJEh/B2gg4tyQ13aZbubd+//5KWRplWy5hbcCBY6ML3zsj1BUKg==}
+  '@m2d/mdast@0.1.8':
+    resolution: {integrity: sha512-XL70LgTZUgDESOkTpDQXVE6LAfZGQ0QhbLUNYYSTVJwUlT4Q+WHJp51Srfn+5ugr0x2tjPZANPpr8NswX0WX/w==}
     peerDependencies:
       docx: ^9.3.0
 
@@ -4719,7 +4719,7 @@ snapshots:
 
   '@m2d/core@1.1.1(docx@9.5.0)':
     dependencies:
-      '@m2d/mdast': 0.1.7(docx@9.5.0)
+      '@m2d/mdast': 0.1.8(docx@9.5.0)
       docx: 9.5.0
 
   '@m2d/emoji@0.1.2(docx@9.5.0)':
@@ -4749,7 +4749,7 @@ snapshots:
       latex-math: 0.0.2
       remark-math: 6.0.0
 
-  '@m2d/mdast@0.1.7(docx@9.5.0)':
+  '@m2d/mdast@0.1.8(docx@9.5.0)':
     dependencies:
       docx: 9.5.0
 
