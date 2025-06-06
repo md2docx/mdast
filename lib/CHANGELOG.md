@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.2.1
+
+### Patch Changes
+
+- ed32615: fix tag types
+
 ## 0.2.0
 
 ### Minor Changes
