@@ -198,7 +198,7 @@ export interface Data extends UnistData {
   highlight?: string;
   frame?: IFrameOptions;
   pre?: boolean;
-  tag?: keyof HTMLElementTagNameMap & SVGElementTagNameMap;
+  tag?: keyof (HTMLElementTagNameMap & SVGElementTagNameMap);
 }
 
 // ## Content maps
