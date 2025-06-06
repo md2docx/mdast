@@ -1,5 +1,12 @@
 # @m2d/mdast
 
+## 0.2.2
+
+### Patch Changes
+
+- 92f2294: Support RootContent inside TableCell.
+- b27aaf9: fix: Add style and type to Data for Html elements
+
 ## 0.2.1
 
 ### Patch Changes
