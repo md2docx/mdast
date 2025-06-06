@@ -19,8 +19,11 @@ import { RenderResult } from "mermaid";
  * This is used to avoid multiple times processing of a given node.
  * Acts like event.stopPropagation.
  */
+
 export interface EmptyNode {
   type: "";
+  /** original type of the node */
+  _type: string;
   [key: string]: unknown;
 }
 
@@ -195,6 +198,7 @@ export interface Data extends UnistData {
   highlight?: string;
   frame?: IFrameOptions;
   pre?: boolean;
+  tag?: keyof HTMLElementTagNameMap & SVGElementTagNameMap;
 }
 
 // ## Content maps
