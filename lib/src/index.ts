@@ -1105,9 +1105,9 @@ export interface TableCell extends Parent {
    */
   type: "tableCell";
   /**
-   * Children of GFM table cell.
+   * Children of GFM table cell support only PhrasingContent. But we support advanced HTML table.
    */
-  children: PhrasingContent[];
+  children: RootContent[];
   /**
    * Data associated with the mdast GFM table cell.
    */
