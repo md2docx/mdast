@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.2.0
+
+### Minor Changes
+
+- 80a4303: Update types to support generating JSX from the processed mdast
+
 ## 0.1.9
 
 ### Patch Changes
