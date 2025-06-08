@@ -17,3 +17,11 @@ export type Mutable<T> = {
       : Mutable<T[K]>
     : T[K];
 };
+
+export type Immutable<T> = {
+  readonly [K in keyof T]: T[K] extends object
+    ? T[K] extends Function
+      ? T[K]
+      : Immutable<T[K]>
+    : T[K];
+};
