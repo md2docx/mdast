@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.2.3
+
+### Patch Changes
+
+- 416c463: Add Immutable utility type.
+
 ## 0.2.2
 
 ### Patch Changes
