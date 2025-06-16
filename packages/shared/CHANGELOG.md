@@ -1,5 +1,12 @@
 # @repo/shared
 
+## 0.0.15
+
+### Patch Changes
+
+- Updated dependencies [41d10f1]
+  - @m2d/mdast@0.2.4
+
 ## 0.0.14
 
 ### Patch Changes

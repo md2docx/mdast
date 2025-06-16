@@ -1,5 +1,11 @@
 # @m2d/mdast
 
+## 0.2.4
+
+### Patch Changes
+
+- 41d10f1: Expand data hold more html input props
+
 ## 0.2.3
 
 ### Patch Changes
