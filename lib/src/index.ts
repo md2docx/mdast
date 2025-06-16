@@ -202,6 +202,9 @@ export interface Data extends UnistData {
   // Html style string
   style?: string;
   type?: HTMLInputElement["type"];
+  checked?: HTMLInputElement["checked"];
+  value?: HTMLInputElement["value"];
+  name?: HTMLInputElement["name"];
 }
 
 // ## Content maps
