@@ -35,7 +35,7 @@
     "@types/unist": "^3.0.3",
     "docx": "^9.5.1",
     "esbuild-plugin-rdi": "^0.0.0",
-    "mermaid": "^11.10.0",
+    "mermaid": "^11.10.1",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"
   },
